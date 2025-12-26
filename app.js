@@ -11,7 +11,6 @@ range.addEventListener("input", () => {
 
 function calculateStrength() {
   let score = 0;
-
   checkboxes.forEach((img) => {
     if (img.checked) score += 1;
   });
@@ -22,13 +21,10 @@ function calculateStrength() {
   else if (score <= 6) images[2].classList.add("active");
   else images[3].classList.add("active");
 }
-
 checkboxes.forEach((img) => img.addEventListener("change", calculateStrength));
 calculateStrength();
-
 copyContainer.addEventListener("click", () => {
   copyContainer.classList.add("copied");
-
   setTimeout(() => {
     copyContainer.classList.remove("copied");
   }, 2500);

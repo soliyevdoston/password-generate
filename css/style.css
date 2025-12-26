@@ -10,10 +10,10 @@ body {
 .output {
   background-color: #24232c;
   height: 80px;
-  display: flex; /* Flex container */
-  justify-content: space-between; /* Chap va o‘ng chekka suradi */
-  align-items: center; /* Vertikal markazlashtirish */
-  padding: 0 16px; /* Ichki bo‘sh joy, kerak bo‘lsa o‘zgartirish mumkin */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
 }
 
 h2 {
@@ -47,7 +47,7 @@ h2 {
 .checkbox-parent {
   display: flex;
   align-items: center;
-  gap: 8px; /* 👈 checkbox va yozuv orasidagi masofa */
+  gap: 8px;
   color: #e6e5ea;
   font-size: 18px;
   margin-bottom: 19px;
@@ -89,7 +89,7 @@ h2 {
   margin-left: 32px;
 }
 .checkbox {
-  accent-color: #a4ffaf; /* checked bo‘lganida rang shu bo‘ladi */
+  accent-color: #a4ffaf;
   width: 18px;
   height: 18px;
   cursor: pointer;
