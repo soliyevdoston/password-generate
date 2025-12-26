@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="parent">
+      <h2>Password Generator</h2>
+      <div class="output">
+        <h3 class="score">P4$5W0rD!</h3>
+        <div class="copy-container">
+          <img src="./img/copy-default.svg" alt="" class="default-img" />
+          <div class="copied">
+            <img src="./img/COPIED.svg" alt="" />
+            <img src="./img/copy-default2.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="setting">
+        <div>
+          <div class="length-parent">
+            <p class="length">Character Length</p>
+            <div class="length-count">4</div>
+          </div>
+          <input class="range" type="range" min="0" max="20" value="4" />
+          <div class="checkbox1">
+            <div class="checkbox-parent">
+              <input type="checkbox" class="checkbox" />Include Uppercase
+              Letters
+            </div>
+            <div class="checkbox-parent">
+              <input type="checkbox" class="checkbox" />Include Lowercase
+              Letters
+            </div>
+            <div class="checkbox-parent">
+              <input type="checkbox" class="checkbox" /> Include Numbers
+            </div>
+            <div class="checkbox-parent">
+              <input type="checkbox" class="checkbox" />Include Symbols
+            </div>
+          </div>
+          <div class="img">
+            <img
+              src="./img/too-weak.svg"
+              alt=""
+              width="476px"
+              height="72px"
+              class="strength-img"
+            />
+            <img
+              src="./img/weak.svg"
+              alt=""
+              width="476px"
+              height="72px"
+              class="strength-img"
+            />
+            <img
+              src="./img/medium.svg"
+              alt=""
+              width="476px"
+              height="72px"
+              class="strength-img"
+            />
+            <img
+              src="./img/strong.svg"
+              alt=""
+              width="476px"
+              height="72px"
+              class="strength-img"
+            />
+          </div>
+          <button class="btn">
+            GENERATE <img src="./img/strelka.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

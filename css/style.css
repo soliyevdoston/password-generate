@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+body {
+  background-color: #18171f;
+  font-family: "JetBrains Mono";
+}
+.parent {
+  width: 540px;
+  margin: auto;
+}
+.output {
+  background-color: #24232c;
+  height: 80px;
+  display: flex; /* Flex container */
+  justify-content: space-between; /* Chap va o‘ng chekka suradi */
+  align-items: center; /* Vertikal markazlashtirish */
+  padding: 0 16px; /* Ichki bo‘sh joy, kerak bo‘lsa o‘zgartirish mumkin */
+}
+
+h2 {
+  text-align: center;
+  color: #817d92;
+  font-size: 24px;
+}
+.setting {
+  margin-top: 24px;
+
+  background-color: #24232c;
+}
+.length {
+  color: #e6e5ea;
+  font-size: 18px;
+  padding-top: 10px;
+}
+.length-count {
+  color: #a4ffaf;
+  font-size: 32px;
+  margin-right: 15px;
+}
+.length-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  margin-left: 32px;
+  margin-right: 15px;
+}
+.checkbox-parent {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* 👈 checkbox va yozuv orasidagi masofa */
+  color: #e6e5ea;
+  font-size: 18px;
+  margin-bottom: 19px;
+}
+
+.checkbox1 {
+  margin: 32px;
+  width: 315px;
+  height: 152px;
+}
+.btn {
+  width: 476px;
+  height: 65px;
+  margin: 32px;
+  background-color: #a4ffaf;
+  font-size: 18px;
+}
+.btn:hover {
+  background-color: #24232c;
+  border: 2px solid #a4ffaf;
+  color: #a4ffaf;
+}
+.btn:active {
+  background-color: #24232c;
+  border: 2px solid #a4ffaf;
+  color: #a4ffaf;
+  outline: 2px dashed #a4ffaf;
+  outline-offset: 4px;
+}
+.range {
+  width: 476px;
+  margin-left: 32px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  accent-color: #a4ffaf;
+}
+.img {
+  margin-left: 32px;
+}
+.checkbox {
+  accent-color: #a4ffaf; /* checked bo‘lganida rang shu bo‘ladi */
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.strength-img {
+  display: none;
+}
+
+.strength-img.active {
+  display: block;
+}
+.score {
+  font-size: 32px;
+  padding-top: auto;
+  margin-left: 32px;
+  color: #817d92;
+}
+.copy-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 15px;
+}
+
+.copy-container .copied {
+  display: none;
+}
+
+.copy-container.copied .default-img {
+  display: none;
+}
+
+.copy-container.copied .copied {
+  display: flex;
+  gap: 5px;
+}
