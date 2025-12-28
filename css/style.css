@@ -211,3 +211,16 @@ h2 {
 #enterBtn:active {
   transform: scale(0.96);
 }
+.intro-footer {
+  position: fixed;
+  bottom: 20px;
+  right: 24px;
+
+  color: #e6e5ea;
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.6;
+
+  user-select: none;
+  z-index: 999;
+}
