@@ -6,6 +6,10 @@ body {
 .parent {
   width: 540px;
   margin: auto;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 1s ease;
 }
 .output {
   background-color: #24232c;
@@ -107,6 +111,10 @@ h2 {
   margin-left: 32px;
   color: #817d92;
 }
+.score.generated {
+  color: #e6e5ea;
+}
+
 .copy-container {
   position: relative;
   display: flex;
@@ -126,4 +134,80 @@ h2 {
 .copy-container.copied .copied {
   display: flex;
   gap: 5px;
+}
+.error {
+  color: #ff6b6b;
+  font-size: 14px;
+  margin-left: 32px;
+  margin-bottom: 10px;
+  display: none;
+}
+.error.show {
+  display: block;
+}
+.intro {
+  position: fixed;
+  inset: 0;
+  background: url("../img/bg-img.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: 1s ease;
+}
+.intro.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.parent.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.intro {
+  position: fixed;
+  inset: 0;
+  background: url("../img/bg-img.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+.glass-box {
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 40px;
+  width: 420px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+.glass-box h1 {
+  margin-bottom: 16px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+.glass-box p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 28px;
+}
+#enterBtn {
+  padding: 14px 32px;
+  background: rgba(164, 255, 175, 0.15);
+  border: 1px solid #a4ffaf;
+  color: #a4ffaf;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+#enterBtn:hover {
+  background: #a4ffaf;
+  color: #18171f;
+}
+#enterBtn:active {
+  transform: scale(0.96);
 }
